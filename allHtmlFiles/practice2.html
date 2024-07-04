@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+    button {
+        padding: 21px;
+    }
+    .btn{
+        text-align: center;
+    }
+    #yellow {
+        background-color: yellow;
+    }
+    #blue {
+        background-color: blue;
+    }
+    #pink {
+        background-color: pink;
+    }
+    #grey {
+        background-color: gray;
+    }
+    #purple {
+        background-color: purple;
+    }
+    #orange {
+        background-color: orange;
+    }
+    .emo  {
+        text-align: center;
+    }
+
+    .display_block{
+        width: 400px;
+        margin-left: 94px;
+        text-align: center;
+    } 
+    .cross-btn .fa{
+        font-size: 20px;
+        text-align: right;    
+    }    
+    .top-bar{
+        width: 100%;
+        height: 65px;
+        font-size: 44px;
+        overflow: hidden;
+    }
+    .left-bar{
+        width: 70px;
+        height: 83%;
+        position: fixed;
+        right: 0;
+        font-size: 45px;
+        top: 51px;
+    }
+    .right-bar{
+        font-size: 45px;
+        width: 70px;
+        height: 86%;
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+        top: 72px;
+        
+    }
+    .bottom-bar{
+        font-size: 45px;
+        width: 100%;
+        height: 67px;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    } 
+       /* ========================================================== second div Bar  ================================================================================ */
+       .top-bar2{
+        width: 94%;
+        height: 65px;
+        font-size: 44px;
+        overflow: hidden;
+        /* background-color: aqua; */
+        position: relative;
+        right: -69px;
+    }
+    .left-bar2{
+        width: 70px;
+        height: 71%;
+        position: fixed;
+        right: 69px;
+        font-size: 45px;
+        top: 130px;
+        /* background-color: aqua; */
+    }
+    .right-bar2{
+        font-size: 44px;
+  width: 70px;
+  height: 70%;
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+
+  left: 71px;
+  top: 148px;
+    }
+    .bottom-bar2{
+        font-size: 45px;
+        width: 93%;
+        height: 68px;
+        position: fixed;
+        bottom: 67px;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        /* background-color: aqua; */
+        right: 60px;
+    } 
+    /* ==================================================================================== third div Bar   ====================================================================== */
+    .top-bar3{
+        width: 86%;
+        height: 65px;
+        font-size: 44px;
+        overflow: hidden;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+        position: relative;
+        right: -137px;
+    }
+    .left-bar3{
+        width: 70px;
+        height: 59%;
+        position: fixed;
+        right: 139px;
+        font-size: 45px;
+        top: 192px;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+    }
+    .right-bar3{
+        font-size: 44px;
+  width: 70px;
+  height: 62%;
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+ 
+  left: 141px;
+  top: 230px;
+    }
+    .bottom-bar3{
+        font-size: 45px;
+        width: 82%;
+        height: 62px;
+        position: fixed;
+        bottom: 137px;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+        right: 139px;
+    } 
+    /* ==================================================================================== fourth div Bar   ====================================================================== */
+    .top-bar4{
+        width: 79%;
+        height: 65px;
+        font-size: 44px;
+        overflow: hidden;
+        /* background-color: rgba(0, 26, 255, 0.795); */
+        position: relative;
+        right: -210px;
+    }
+    .left-bar4{
+        width: 70px;
+        height: 42%;
+        position: fixed;
+        right: 206px;
+        font-size: 45px;
+        top: 257px;
+        /* background-color: rgba(0, 26, 255, 0.795); */
+    }
+    .right-bar4{
+        font-size: 45px;
+        width: 70px;
+        height: 50%;
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+  
+        
+        left: 209px;
+        top: 258px;
+    }
+    .bottom-bar4{
+        font-size: 45px;
+        width: 76%;
+        height: 67px;
+        position: fixed;
+        bottom: 204px;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        /* background-color: rgba(0, 26, 255, 0.795); */
+        right: 175px;
+    } 
+    /* ==================================================================================== fifth div Bar   ====================================================================== */
+    .top-bar5{
+        width: 75%;
+        height: 65px;
+        font-size: 44px;
+        overflow: hidden;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+        position: relative;
+        right: -279px;
+    }
+    .left-bar5{
+        width: 70px;
+        height: 28%;
+        position: fixed;
+        right: 276px;
+        font-size: 45px;
+        top: 327px;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+    }
+    .right-bar5{
+        font-size: 45px;
+        width: 70px;
+        height: 37%;
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+        
+        left: 279px;
+        top: 325px;
+    }
+    .bottom-bar5{
+        font-size: 45px;
+        width: 68%;
+        height: 67px;
+        position: fixed;
+        bottom: 271px;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+        right: 275px;
+    } 
+    .emoji{
+        cursor: pointer;
+        font-size: 40px;
+        border: none;
+        padding: 0;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #e1e9f04f;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    }
+</style>
+<body style="margin: 0;">
+
+<div class="div-bar">
+    <div class="top-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+    <div class="bottom-bar"></div>
+</div>
+<div class="div-bar2">
+    <div class="top-bar2"></div>
+    <div class="left-bar2"></div>
+    <div class="right-bar2"></div>
+    <div class="bottom-bar2"></div>
+</div>
+<div class="div-bar3">
+    <div class="top-bar3"></div>
+    <div class="left-bar3"></div>
+    <div class="right-bar3"></div>
+    <div class="bottom-bar3"></div>
+</div>
+<div class="div-bar4">
+    <div class="top-bar4"></div>
+    <div class="left-bar4"></div>
+    <div class="right-bar4"></div>
+    <div class="bottom-bar4"></div>
+</div>
+<div class="div-bar5">
+    <div class="top-bar5"></div>
+    <div class="left-bar5"></div>
+    <div class="right-bar5"></div>
+    <div class="bottom-bar5"></div>
+</div>
+
+
+
+
+<!-- <div class="btn">
+    <button class="button" id="yellow">yellow</button>
+    <button class="button" id="blue">blue</button>
+    <button class="button" id="pink">pink</button>
+    <button class="button" id="grey">gray</button>
+    <button class="button" id="orange">orange</button>
+    <button class="button" id="purple">purple</button>
+    <button class="button" id="white">white</button>
+</div> -->
+<div class="emo">
+    <!-- <button class="emoji" >😍</button>
+    <button class="emoji" >😊</button>
+    <button class="emoji" >👌</button>
+    <button class="emoji" >😁</button>
+    <button class="emoji" >😎</button>
+    <button class="emoji" >😃</button>
+    <button class="emoji" >🤷‍♂️</button> --><br> 
+  
+    <button class="playPause" id="playbtn" style="color: blue; font-weight: 600;">
+        <!-- play😉 --><i class="fa fa-play"></i>
+    </button>
+   
+    <button class="cross-btn" id="clearbtn" style="color: blue; font-weight: 600;">
+       clear
+    </button>
+</div>   
+
+</body>
+<script>
+  
+ 
+  
+   // const buttons = document.querySelectorAll('button');
+   // const body = document.querySelector('body');
+
+    const topBar = document.querySelector(".top-bar");
+    const leftBar = document.querySelector(".left-bar");
+    const bottomBar = document.querySelector(".bottom-bar");
+    const rightBar = document.querySelector(".right-bar");
+
+    const topBar2 = document.querySelector(".top-bar2");
+    const leftBar2 = document.querySelector(".left-bar2");
+    const bottomBar2 = document.querySelector(".bottom-bar2");
+    const rightBar2 = document.querySelector(".right-bar2");
+
+    const topBar3 = document.querySelector(".top-bar3");
+    const leftBar3 = document.querySelector(".left-bar3");
+    const bottomBar3 = document.querySelector(".bottom-bar3");
+    const rightBar3 = document.querySelector(".right-bar3");
+
+    const topBar4 = document.querySelector(".top-bar4");
+    const leftBar4 = document.querySelector(".left-bar4");
+    const bottomBar4 = document.querySelector(".bottom-bar4");
+    const rightBar4 = document.querySelector(".right-bar4");
+
+    const topBar5 = document.querySelector(".top-bar5");
+    const leftBar5 = document.querySelector(".left-bar5");
+    const bottomBar5 = document.querySelector(".bottom-bar5");
+    const rightBar5 = document.querySelector(".right-bar5");
+
+    // const emojis = document.querySelectorAll('.emoji');
+    const clearBtn = document.querySelector('.cross-btn')
+    const play_Pause = document.querySelector('.playPause');
+
+   let intervalId;
+    play_Pause.addEventListener('click', function () {
+        
+        clearInterval(intervalId);
+        if (play_Pause.innerHTML === '<i class="fa fa-play"></i>') {
+            play_Pause.innerHTML = '<i class="fa fa-pause"></i>';
+            resumeInterval();
+        } else {
+            play_Pause.innerHTML = '<i class="fa fa-play"></i>';
+            clearInterval(intervalId);
+        }
+    });
+
+    let currentBar = topBar; 
+
+  play_Pause.addEventListener('click', function() {
+         
+    intervalId = setInterval(() => {
+
+        if (currentBar.scrollHeight > currentBar.clientHeight) {
+    
+            if (currentBar === topBar) {
+                currentBar = leftBar;
+            } else if (currentBar === leftBar) {
+                currentBar = bottomBar;
+            } else if (currentBar === bottomBar) {
+                currentBar = rightBar;
+            } else if (currentBar === rightBar && !topBar2.emojiArray) {
+            
+                currentBar = topBar2;
+            } else if (currentBar === topBar2 && !leftBar2.emojiArray) {
+               
+                currentBar = leftBar2;
+            } else if (currentBar === leftBar2 && !bottomBar2.emojiArray) {
+             
+                currentBar = bottomBar2;
+            } else if (currentBar === bottomBar2 && !rightBar2.textContent) { 
+                currentBar = rightBar2;
+            } else if (currentBar === rightBar2 && !topBar3.textContent) {
+                currentBar = topBar3;
+            } else if (currentBar === topBar3 && !leftBar3.textContent) {
+                 currentBar = leftBar3;
+            } else if (currentBar === leftBar3 && !bottomBar3.textContent) {
+                currentBar = bottomBar3;
+            } else if (currentBar === bottomBar3 && !rightBar3.textContent) {
+                currentBar = rightBar3;
+            } else if(currentBar === rightBar3 && !topBar4.textContent) {
+              currentBar = topBar4;
+            }else if (currentBar === topBar4 && !leftBar4.textContent) {
+              currentBar = leftBar4;
+            } else if (currentBar === leftBar4 && !bottomBar4.textContent) {
+              currentBar = bottomBar4;
+            }else if (currentBar === bottomBar4 && !rightBar4.textContent) {
+              currentBar = rightBar4;
+            }else if (currentBar === rightBar4 && !topBar5.textContent) {
+              currentBar = topBar5;
+            }else if (currentBar === topBar5 && !leftBar5.textContent) {
+              currentBar = leftBar5;
+            } else if(currentBar === leftBar5 && !bottomBar5.textContent){
+                currentBar = bottomBar5;
+            }else if (currentBar === bottomBar5 && !rightBar5.textContent) {
+                currentBar = rightBar5;
+            }
+            
+            else {
+                return; 
+            }
+            clearInterval(intervalId);
+            return;
+        }
+        currentBar.innerHTML += "😎";
+    }, 100);
+
+    });
+
+
+    clearBtn.addEventListener('click', function () {
+        topBar.textContent = "";
+        leftBar.textContent = "";
+        bottomBar.textContent = "";
+        rightBar.textContent = "";
+        topBar2.textContent = "";
+        leftBar2.textContent = "";
+        bottomBar2.textContent = "";
+        rightBar2.textContent = "";
+        topBar3.textContent = "";
+        leftBar3.textContent = "";
+        bottomBar3.textContent = "";
+        rightBar3.textContent = "";
+        topBar4.textContent = "";
+        leftBar4.textContent = "";
+        bottomBar4.textContent = "";
+        rightBar4.textContent = "";
+        topBar5.textContent = "";
+        leftBar5.textContent = "";
+        bottomBar5.textContent = "";
+        rightBar5.textContent = "";
+     
+    });
+</script>
+</html>

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./custom.css">
+    <title>GreekFolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="home-main-crev main-bg"
+    style="touch-action: pan-x; height: 6948px; overscroll-behavior: none; scroll-behavior: auto;">
+    <div class="loader-wrap"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, -1500px); display: none; z-index: -1;">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
+        </svg>
+
+        <div class="loader-wrap-heading">
+            <div class="load-text"
+                style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, -100px);">
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== cursor point ========================= -->
+
+    <div class="cursor" style="left: 359px; top: 567px;"></div>
+
+    <!-- ==================== Start progress-scroll-button ==================== -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919px, 307.919px; stroke-dashoffset: 307.919px;">
+            </path>
+        </svg>
+    </div>
+
+    <!-- ==================== Starting section ==================== -->
+
+    <!-- <header class="header-nav nav-scroll">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container">
+                <a class=" logo navbar-brand" href="#">
+                    <img src="./assets/images/logo-light.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="demo.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+                </div>
+        </nav>
+    </header> -->
+
+    <!-- ================================ Ui/Ux Designer ================================== -->
+
+    <section class="personal-header position-re sub-bg"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px);">
+        <div class="navbar2">
+            <div class="container ontop" style="translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            transform: translate(0px);">
+                <div class="person-info text-center mb-50 ">
+                    <span class="person-hello">
+                        <h3>HELLO I'M</h3>
+                    </span>
+                    <span class="person-name">
+                        <h1>Cillian Murphy</h1>
+                    </span>
+                    <span>
+                        <p>UI / UX Designer based in Melbourne</p>
+                    </span>
+                </div>
+
+                <div class="row justify-content-around">
+                    <div class="col-lg-3 john">
+                        <div class="pt-40">
+                            <div class="info-item mb-80">
+                                <h6>Experties</h6>
+                                <span class="sub-title mt-5">Front-End & developer</span>
+                            </div>
+                            <div class="info-item">
+                                <div class="rate-star mb-15 fz-15">
+                                    <span class="stars">
+                                        <i class="fa fa-star " aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star " aria-hidden="true"></i>
+                                        <span class="p-2">4.9</span>
+                                    </span>
+                                </div>
+                                <p>7000+ Clients Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 ">
+                        <div class="person-img"><img src="person01.png"></div>
+
+                    </div>
+                    <div class="col-lg-3 john">
+                        <div class="pt-40 text-right">
+                            <div class="info-item d-flex align-items-center justify-content-end mb-80">
+                                <h6 class="sub-title mr-10">Years<br> of Experience</h6>
+                                <h2>12</h2>
+
+                            </div>
+                            <div class="info-item">
+                                <span class="sub-title mb-30">Featured Work</span>
+                                <h6 class="fz-18 mt-15">Bayone Framer UI / UX Template</h6>
+                                <div class="underline sub-title mt-15">
+                                    <a href="#">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="curve">
+                <svg class="circle" x="0px" y="0px" viewBox="0 0 500 250" enable-backgroun="new 0 0 500 250"
+                    xml:space="preserve" preserveAspectRatio="none">
+                    <path fill="#1d1d1d"
+                        d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================ marquee section =============================== -->
+
+    <section class="mark-slide">
+        <div class="main-marq pb-30">
+            <div class="slide-har">
+                <div class="box d-flex">
+                    <div class="item">
+                        <h4 class="d-flex align-items-center fz-70 d-flex"></h4>
+                        <span class="item-name">UI UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                    </div>
+                    <div class="item">
+                        <h4 class="d-flex align-items-center fz-70 d-flex"></h4>
+                        <span>UI UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                    </div>
+                    <div class="item">
+                        <h4 class="d-flex align-items-center fz-70 d-flex"></h4>
+                        <span class="item-name">UI UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                    </div>
+                    <div class="item">
+                        <h4 class="d-flex align-items-center fz-70 d-flex"></h4>
+                        <span>UI UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                    </div>
+                </div>
+                <div class="box d-flex">
+                    <div class="item">
+                        <h4 class="d-flex align-items-center fz-70 d-flex"></h4>
+                        <span class="item-name">UI UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                    </div>
+                    <div class="item">
+                        <h4 class="d-flex align-items-center fz-70 d-flex"></h4>
+                        <span>UI UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                    </div>
+                    <div class="item">
+                        <h4 class="d-flex align-items-center fz-70 d-flex"></h4>
+                        <span class="item-name">UI UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                    </div>
+                    <div class="item">
+                        <h4 class="d-flex align-items-center fz-70 d-flex"></h4>
+                        <span>UI UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--services section-->
+
+    <section class="serv-box section-padding sub-bg position-re">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="sec-lg-head">
+                        <div class="position-re">
+                            <h6 class="dot-titl-non wow fadeIn" style="visibility: visible;
+                                    animation-name: fadeIn;">Featured services</h6>
+                            <h2 class="d-rotate wow animated" style="visibility: visible;">
+                                <span class="rotate-text">Our Services</span>
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet consecteti Dolore nemo quibusrem dolorem atque quisquam
+                                laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+
+                    <div class="serv-list2">
+                        <div class="item pt-30 pb-30 bord-thin-top">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-12">
+                                    <div class="icon-img-50">
+                                        <img src="./assets/images/0queb.png">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-12">
+                                    <h6 style="font-size: 20px; line-height: 1.8;">Digital Products Design</h6>
+                                </div>
+                                <div class="col-lg-6 offset-lg-1">
+                                    <span style="line-height: 2;
+                                                font-size: 17px;">Lorem ipsum dolcour aut quia ut distinctio, deleniti
+                                        m fuga consectetur minus alias.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item pt-30 pb-30 bord-thin-top">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="icon-img-50">
+                                        <img src="./assets/images/star1.png">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h6 style="font-size: 20px; line-height: 1.8;">Digital Products Design</h6>
+                                </div>
+                                <div class="col-lg-6 offset-lg-1">
+                                    <span style="line-height: 2;
+                                                font-size: 17px;">Lorem ipsum dolcour aut quia ut distinctio, deleniti
+                                        m fuga consectetur minus alias.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item pt-30 bord-thin-top">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="icon-img-50">
+                                        <img src="./assets/images/2wed-queb.png">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h6 style="font-size: 20px; line-height: 1.8;">Digital Products Design</h6>
+                                </div>
+                                <div class="col-lg-6 offset-lg-1">
+                                    <span style="line-height: 2;
+                                                font-size: 17px;">Lorem ipsum dolcour aut quia ut distinctio, deleniti
+                                        m fuga consectetur minus alias.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="curve revers">
+            <svg id="circle" x="0px" y="0px" viewBox="0 0 500 250" enable-backgroun="new 0 0 500 250"
+                xml:space="preserve" preserveAspectRatio="none">
+                <path fill="#1d1d1d"
+                    d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!--portfolio section-->
+
+    <section class="portfolio section-padding pb-70 sub-bg">
+        <div class="container-fluid ">
+            <div class="gallery2 ">
+                <div class="row ">
+                    <div class="items web info-overplay mb-50">
+                        <div class="item-img o-hidden"><img src="1shos.jpg"></div>
+                        <div class="info  text-center mt-4">
+                            <span class="sub-title">DESIGN ART</span>
+                            <h6>Million Dollar Invesment</h6>
+                        </div>
+                    </div>
+                    <div class="width2 items app info-overplay  ">
+                        <div class=" item-img o-hidden "><img src="2lamp.jpg"></div>
+                        <div class="info text-center mt-4 ">
+                            <span class="sub-title ">DESIGN ART</span>
+                            <h6>Million Dollar Invesment</h6>
+                        </div>
+                    </div>
+                    <div class="width2 items brand info-overplay ">
+                        <div class="item-img o-hidden "><img src="./assets/images/3solv.jpg  "></div>
+                        <div class="info text-center mt-4 ">
+                            <span class="sub-title ">DESIGN ART</span>
+                            <h6>Million Dollar Invesment</h6>
+                        </div>
+                    </div>
+
+                    <div class="width2 items web info-overplay mb-50 ">
+                        <div class="item-img o-hidden "><img src="5sheno.jpg "></div>
+                        <div class="info text-center mt-4 ">
+                            <span class="sub-title ">DESIGN ART</span>
+                            <h6>Million Dollar Invesment</h6>
+                        </div>
+                    </div>
+                    <div class="width2 items brand info-overplay mb-50 ">
+                        <div class="item-img o-hidden "><img src="6reserch.jpg "></div>
+                        <div class="info text-center mt-4 ">
+                            <span class="sub-title ">DESIGN ART</span>
+                            <h6>Million Dollar Invesment</h6>
+                        </div>
+                    </div>
+                    <div class="items app info-overplay mb-50 temu">
+                        <div class="item-img o-hidden "><img src="./assets/images/4temu.jpg "></div>
+                        <div class="info text-center mt-4 ">
+                            <span class="sub-title ">DESIGN ART</span>
+                            <h6>Million Dollar Invesment</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--start skills section-->
+
+    <section class="skills-exp section-padding " data-scroll-index="4 " style="background-color: #000000e0; ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <div class="sec-lg-head mb-80 ">
+                        <div class="position-re ">
+                            <h6 class="dot-titl-non wow mb-1 fadeIn "
+                                style="visibility: visible; animation-name: fadeIn; ">Skills & Experience</h6>
+                            <h2 class="d-rotate wow animated " style="visibility: visible; ">
+                                <span class="rotate-text mb-4 ">My Experience</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="skill-item d-flex justify-content-between md-mb50 ">
+                        <div class="item text-center ">
+                            <div class="icon-img-50 m-auto ">
+                                <img src="./assets/images/figma-cover.png ">
+                            </div>
+                            <span class="mt-3 d-inline-block ">Figma</span>
+                        </div>
+                        <div class="item text-center ">
+                            <div class="icon-img-60 m-auto ">
+                                <img src="./assets/images/woldpres-icon.png ">
+                            </div>
+                            <span class="mt-3 d-inline-block ">WordPress</span>
+                        </div>
+                        <div class="item text-center ">
+                            <div class="icon-img-60 m-auto ">
+                                <img src="./assets/images/free-angular.png ">
+                            </div>
+                            <span class="mt-3 d-inline-block ">Angular</span>
+                        </div>
+                        <div class="item text-center ">
+                            <div class="icon-img-60 m-auto ">
+                                <img src="./assets/images/webflow-icon.png ">
+                            </div>
+                            <span class="mt-3 d-inline-block ">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 valign ">
+                    <div class="exp-item full-widht ">
+                        <div class="item-exp d-flex pb-30 pt-30 mb-30 bord-thin-top bord-thin-bottom ">
+                            <div class="title ">
+                                <h6>Android Studio</h6>
+                                <p>Junior Product Designer ...</p>
+                            </div>
+                            <div class="date ">
+                                <span class="icon ">
+                                    <i class="fa fa-arrow-right " aria-hidden="true "></i>
+                                </span>
+                                <p>2017 - 2023</p>
+                            </div>
+                        </div>
+                        <div class="item-exp d-flex pb-30 mb-30 bord-thin-bottom ">
+                            <div class="title ">
+                                <h6>Slack</h6>
+                                <p>UI/XI Designer & developer</p>
+                            </div>
+                            <div class="date ">
+                                <span class="icon ">
+                                    <i class="fa fa-arrow-right " aria-hidden="true "></i>
+                                </span>
+                                <p>2014 - 2020</p>
+                            </div>
+                        </div>
+                        <div class="item-exp d-flex pb-30 bord-thin-bottom ">
+                            <div class="title-app ">
+                                <h6>Apple</h6>
+                                <p>Ios developer</p>
+                            </div>
+                            <div class="date ">
+                                <span class="icon ">
+                                    <i class="fa fa-arrow-right " aria-hidden="true "></i>
+                                </span>
+                                <p>2016 - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--testimonials section-->
+
+    <section class="testim-crv section-padding sub-bg " data-scroll-index="5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-4 valign ">
+                    <div class="sec-lg-head md-mb80 ">
+                        <div class="position-re ">
+                            <h6 class="dot-titl-non wow mb-1 fadeIn "
+                                style="visibility: visible; animation-name: fadeIn; ">What Clients Says ?</h6>
+                            <h2 class="d-rotate wow animated " style="visibility: visible; ">
+                                <span class="rotate-text mb-4 ">Testimonials</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 ">
+                    <div class=" testim-swiper2 ">
+                        <div class=" screenshot_slider owl-carousel ">
+                            <div class="item ">
+                                <div class="cont  ">
+                                    <div class="rate-stars mb-20 fz-12 ">
+                                        <span class="rate main-color ">
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                        </span>
+                                    </div>
+                                    <p style="font-size: 21px; font-weight: 400; ">I have been hiring people in this
+                                        space for a number of years and I have never seen this level of professionalism.
+                                        It really feels like you are working with a team that can get the job done.
+                                    </p>
+                                    <div class="d-flex align-items-center ">
+                                        <div class="reviews-img ">
+                                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg "
+                                                alt=" " title=" ">
+                                        </div>
+
+                                        <span class="ml-30 mt-30 ">
+                                            <h6>Tommy Stark</h6>
+
+                                            <p>CEO</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="cont  ">
+                                    <div class="rate-stars mb-20 fz-12 ">
+                                        <span class="rate main-color ">
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                        </span>
+                                    </div>
+                                    <p style="font-size: 21px; font-weight: 400; ">I have been hiring people in this
+                                        space for a number of years and I have never seen this level of professionalism.
+                                        It really feels like you are working with a team that can get the job done.
+                                    </p>
+                                    <div class="d-flex align-items-center ">
+                                        <div class="reviews-img ">
+                                            <img src="./assets/images/1icon.jpg " alt=" " title=" ">
+                                        </div>
+
+                                        <span class="ml-30 mt-30 ">
+                                            <h6>Rome Stark</h6>
+
+                                            <p>CEO</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="cont  ">
+                                    <div class="rate-stars mb-20 fz-12 ">
+                                        <span class="rate main-color ">
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                            <i class="fa fa-star " aria-hidden="true "></i>
+                                        </span>
+                                    </div>
+                                    <p style="font-size: 21px; font-weight: 400; ">I have been hiring people in this
+                                        space for a number of years and I have never seen this level of professionalism.
+                                        It really feels like you are working with a team that can get the job done.
+                                    </p>
+                                    <div class="d-flex align-items-center ">
+                                        <div class="reviews-img ">
+                                            <img src="./assets/images/2icon.jpg " alt=" " title=" ">
+                                        </div>
+
+                                        <span class="ml-30 mt-30 ">
+                                            <h6>Leonard Stark</h6>
+
+                                            <p>CEO</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Brands section-->
+
+    <section class="brand-sec " style="background-color: #000000e1; ">
+        <div class="container ">
+            <div class="sec-lg-head mb-80 ">
+                <div class="position-re text-center ">
+                    <h6 class="dot-titl-non wow mb-1 fadeIn " style="visibility: visible;animation-name: fadeIn; ">Our
+                        Clients</h6>
+                    <h2 class="d-rotate wow animated " style="visibility: visible; ">
+                        <span class="rotate-text mb-4 ">Companies I've Worked With</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="brand-marq main-marq ">
+            <div class="slide-har st1 ">
+                <div class="box ">
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/okgo.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/b8.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/odk.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/react-js.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/jmk.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/java.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/okgo.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/jmk.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/b8.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/react-js.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+                <div class="box ">
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/odk.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/java.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/b8.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/okgo.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/jmk.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/odk.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/b8.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/okgo.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/jmk.png " alt=" ">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img ">
+                            <img src="./assets/images/java.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--news section-->
+
+    <section class="blog-list-half crev section-padding sub-bg ">
+        <div class="container ">
+            <div class="sec-lg-head mb-80 ">
+                <div class="row ">
+                    <div class="col-lg-6 ">
+                        <div class="sec-lg-head mb-80 ">
+                            <div class="position-re ">
+                                <h6 class="dot-titl-non wow mb-1 fadeIn "
+                                    style="visibility: visible; animation-name: fadeIn; ">Our Blog</h6>
+                                <h2 class="d-rotate wow animated " style="visibility: visible; ">
+                                    <span class="rotate-text mb-4 ">Latest News.</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center ">
+                        <div class="full-width d-flex justify-content-end justify-end ">
+                            <div class="vew-all d-flex text-decoration-none ">
+                                <a href="# ">Views all Our News
+                                    <span class="icon news " style="margin-left: 10px; ">
+                                        <i class="fa fa-arrow-right " aria-hidden="true "></i>
+                                    </span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow fadeIn " data-wow-delay=".4s "
+                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn; margin-top: 64px; ">
+                <div class="col-lg-6 ">
+                    <div class="item md-mb80 ">
+                        <div class="row rest ">
+                            <div class="col-md-6 ">
+                                <div class="img ">
+                                    <img class="news-img" src="./assets/images/businessman-g.jpg ">
+                                </div>
+                            </div>
+                            <div class="col-md-6 valign ">
+                                <div class="cont ">
+                                    <span class="date1 fz-12 ls1 text-u opacity-7 mb-15 ">August 6,
+                                        2022
+                                    </span>
+                                    <h5>Free advertising for your online business. </h5>
+                                    <div class="tags colorbg mt-30 ">
+                                        <a href="# ">Marketing</a>
+                                        <a href="# ">Design</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="item md-mb80 ">
+                        <div class="row rest ">
+                            <div class="col-md-6 ">
+                                <div class="img ">
+                                    <img src="./assets/images/bulding-d.jpg ">
+                                </div>
+                            </div>
+                            <div class="col-md-6 valign ">
+                                <div class="cont ">
+                                    <span class="date1  fz-12 ls1 text-u opacity-7 mb-15 ">August 6,
+                                        2022
+                                    </span>
+                                    <h5>Free advertising for your online business. </h5>
+                                    <div class="tags colorbg mt-30 ">
+                                        <a href="# ">Marketing</a>
+                                        <a href="# ">Design</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+
+    <section class="contact-crev section-padding " data-scroll-index="7 " style="background-color: #000000db; ">
+        <div class="contact-container ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-5 ">
+                        <div class="sec-lg-head mb-80 ">
+                            <div class="position-re ">
+                                <h6 class="dot-titl-non wow mb-1 fadeIn "
+                                    style="visibility: visible; animation-name: fadeIn; ">Get in touch</h6>
+                                <h2 class="d-rotate wow animated " style="visibility: visible; ">
+                                    <span class="rotate-text mb-4 ">Late's make your brand brilliant </span>
+                                </h2>
+                                <p class="fz-15 mt-10 wow fadeIn "
+                                    style="visibility: visible; animation-name: fadeIn; ">If you would like to work with
+                                    us or just want to get in touch, we’d love to hear from you </p>
+                                <div class="phone fz-30 fw-600 mt-30 underline wow fadeIn "
+                                    style="visibility: visible; animation-name: fadeIn; ">
+                                    <a href="# ">+1 840 841 25 69</a>
+                                </div>
+                                <ul class="rest social-text d-flex mt-60 ">
+                                    <span class="hover-anim mr-30">Facebook</span>
+                                    <span class="hover-anim mr-30">Twitter</span>
+                                    <span class="hover-anim mr-30 ">LinkedIn</span>
+                                    <span class="hover-anim ">Instagram</span>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 valign ">
+                        <div class="full-width ">
+                            <form id="contact-form " method="post " novalidate="true ">
+                                <div class="controls row ">
+                                    <div class="col-lg-6 ">
+                                        <div class="form-group mb-30 ">
+                                            <input id="form_name " type="text " name="name " placeholder="Name "
+                                                required="required ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ">
+                                        <div class="form-group mb-30 ">
+                                            <input id="form_email " type="email " name="email " placeholder="Email "
+                                                required="required ">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="form-group mb-30 ">
+                                            <input id="form_subject " type="text " name="subject "
+                                                placeholder="Subject ">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="form-group mb-30 ">
+                                            <textarea id="form_message " type="text " name="message "
+                                                placeholder="Message " required="required "></textarea>
+                                        </div>
+                                        <div class="mt-30 ">
+                                            <button class="butn butn-full butn-bord radius-30 disabled " type="submit ">
+                                                <span class="text ">Let's Talk</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <footer class="sub-bg ">
+        <div class="sub-footer pt-40 pb-40 bord-thin-top ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-4 ">
+                        <div class="logo ">
+                            <img src="./assets/images/logo-light.png " style="max-width: 120px; ">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ">
+                        <div class="copyright d-flex ">
+                            <div class="ml-auto ">
+                                <p class="fz-15 ">© 2023 Geekfolio is Proudly Powered by
+                                    <span class="underline "><a href="# " target="_blank ">Ui-ThemeZ</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript " src="./jquery.js"></script>
+    <script type="text/javascript " src="./custom.js "></script>
+    <script type="text/javascript " src="./bootstrap.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".screenshot_slider ").owlCarousel({
+                items: 2, // Number of items to display
+                loop: true, // Enable loop
+                nav: true, // Enable navigation
+                dots: false, // Disable pagination dots
+                navText: ["<i class='fa fa-chevron-left'> </i> ", " <i class = 'fa fa-chevron-right'> </i> "],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 1
+                    },
+                    769: {
+                        items: 1
+                    },
+                    991: {
+                        items: 2
+                    }
+                }
+            });
+        });
+
+        $(function () {
+
+            gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+            ScrollTrigger.normalizeScroll(true)
+
+            // create the smooth scroller FIRST!
+            let smoother = ScrollSmoother.create({
+                smooth: 2,
+                effects: true,
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    
+#container{
+    width: 680px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blocks {
+    text-align: center;
+    height: 22px;
+    width: 22px;
+    background-color: aqua;
+    border: 1px solid #faf4f4;
+}
+.buttons{
+    text-align: end;
+    margin-right: 20px;
+}
+  .fa_fa-arrow-right{
+    display: inline-block;
+    height: 6px;
+    width: 12px;
+    background: rgb(250, 0, 0);
+    border-radius: 5px;
+    }
+</style>
+<body style="margin: 0px 0px 0px 7px;">
+
+    <div id="container"></div>
+    <button class="emoji">Draw Fruit</button>
+
+</body>
+<script>
+const container = document.getElementById("container");
+const fruits = ["🥭", "🥝", "🍎", "🍊", "🍔"];
+const fruitsButton = document.querySelector(".emoji");
+
+createBlocksDiv();
+
+const blocks = document.querySelector(".blocks");
+let arrow = [displayArrow()];
+
+function createBlocksDiv() {
+  for (let i = 0; i < 28; i++) {
+    const blocksDiv = document.createElement("div");
+    blocksDiv.classList.add("blocks-div");
+    container.appendChild(blocksDiv);
+
+    for (let j = 0; j < 20; j++) {
+      const block = document.createElement("div");
+      block.classList.add("blocks");
+      blocksDiv.appendChild(block);
+    }
+  }
+}
+let indexArrow = 0;
+const fruitsIndex = [];
+
+fruitsButton.addEventListener("click", function () {
+  const blocks = document.querySelectorAll(".blocks");
+  blocks.forEach((block, index) => {
+    if (Math.random() > 0.99) {
+      const randomIndex = Math.floor(Math.random() * fruits.length);
+      block.textContent = fruits[randomIndex];
+    } else {
+      block.textContent = "";
+    }
+    if (index === blocks.length - 1) {
+      arrow = displayArrow();
+    }
+
+    if (fruits.includes(block.textContent)) {
+      console.log(index + "fruits index: ");
+      fruitsIndex.push(index);
+       console.log(fruitsIndex + "  too");
+    }
+  });
+});                                                                                                  
+
+document.addEventListener("keydown", function (event) {
+  switch (event.key) {
+    case "ArrowUp":
+      arrow.innerHTML = '<i class="fa fa-arrow-up"></i>';
+      arrow.style.top = parseInt(arrow.style.top) - 24 + "px";
+      indexArrow -= 50;
+      console.log(indexArrow);
+      if (fruitsIndex.includes(indexArrow)) {
+        arrow.unshift(displayArrow());
+      }
+      break;
+    case "ArrowDown":
+      arrow.innerHTML = '<i class="fa fa-arrow-down"></i>';
+      arrow.style.top = parseInt(arrow.style.top) + 24 + "px";
+      indexArrow += 50;
+      console.log(indexArrow);
+      if (fruitsIndex.includes(indexArrow)) {
+        arrow.unshift(displayArrow());
+      }
+
+      break;
+    case "ArrowLeft":
+      arrow.innerHTML = '<i class="fa fa-arrow-left"></i>';
+
+      arrow.style.left = parseInt(arrow.style.left) - 25 + "px";
+      indexArrow -= 1;
+      console.log(indexArrow);
+      if (fruitsIndex.includes(indexArrow)) {
+        console.log(arrow.unshift(displayArrow()))
+      }
+      break;
+    case "ArrowRight":
+      arrow.innerHTML = '<i class="fa fa-arrow-right"></i>';
+      
+      
+      arrow.style.left = parseInt(arrow.style.left) + 25 + "px";
+      indexArrow += 1;
+      console.log(indexArrow);
+      if (fruitsIndex.includes(indexArrow)) {
+        arrow.unshift(displayArrow());
+       
+      }
+      break;
+    default:
+      break;
+  }
+  console.log(arrow.innerHTML);
+});
+
+function displayArrow() {
+  const tempArrow = document.createElement("span");
+  const icon = document.createElement("i");
+  icon.classList.add("fa_fa-arrow-right");
+  blocks.appendChild(tempArrow);
+  tempArrow.appendChild(icon);
+
+  tempArrow.style.position = "relative";
+  tempArrow.style.left = "4px";
+  tempArrow.style.top = "1px";
+  tempArrow.style.right = "0px";
+  tempArrow.style.bottom = "0px";
+
+  return tempArrow;
+}
+function arrow_in_block() {
+  
+}
+</script>
+</html>
+
+<!-- 
+myArray1 = new Array("tanks","Banks", "Thanks", "men", "women", "gals")
+myArray2 = new Array("men","tanks", "guys","Banks", "women", "gals")
+myArray3 = myArray1.concat(myArray2);
+myArray3.sort();
+for (var i = 0; i<myArray3.length; i++ ){ if (myArray3[i]==myArray3[i+1]){ myArray3[i]="" ; myArray3[i+1]="" ; } }
+  window.alert(myArray3) -->

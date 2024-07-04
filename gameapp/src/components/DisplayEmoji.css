@@ -1,0 +1,355 @@
+.block {
+    text-align: center;
+    /* background: gold; */
+
+}
+
+.buttons {
+    text-align: end;
+    margin-right: 20px;
+}
+
+/* =========  frist div  ================= */
+.blocks #top-div {
+    width: 100%;
+    height: 62px;
+    font-size: 43px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.blocks #left-div {
+    width: 70px;
+    height: 86%;
+    position: fixed;
+    right: 0;
+    font-size: 45px;
+    top: 48px;
+}
+
+
+.blocks #right-div {
+    font-size: 45px;
+    width: 70px;
+    height: 86%;
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 72px;
+
+}
+
+.blocks #bottom-div {
+    font-size: 45px;
+    width: 100%;
+    height: 67px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.blocks:nth-child(2) #top-div {
+    width: 92%;
+    height: 60px;
+    font-size: 43px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 64px;
+
+}
+
+.blocks:nth-child(2) #right-div {
+    font-size: 45px;
+    width: 70px;
+    height: 75%;
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 118px;
+    left: 62px;
+    overflow: hidden;
+
+}
+
+
+
+.blocks:nth-child(2) #bottom-div {
+    font-size: 45px;
+    width: 94%;
+    height: 67px;
+    position: fixed;
+    bottom: 59px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    left: 50px;
+}
+
+.blocks:nth-child(2) #left-div {
+    width: 70px;
+    height: 76%;
+    position: fixed;
+    right: 56px;
+    font-size: 45px;
+    top: 113px;
+    /* background: aqua; */
+    overflow: hidden;
+}
+
+
+/* =========  third div  ================= */
+
+.blocks:nth-child(3) #top-div {
+    width: 87%;
+    height: 62px;
+    font-size: 43px;
+    overflow: hidden;
+    position: relative;
+    left: 99px;
+    display: flex;
+    flex-direction: row;
+    /* background: antiquewhite; */
+}
+
+.blocks:nth-child(3) #left-div {
+    width: 70px;
+    height: 63%;
+    position: fixed;
+    right: 117px;
+    font-size: 45px;
+    top: 176px;
+    /* background: antiquewhite; */
+    overflow: hidden;
+}
+
+.blocks:nth-child(3) #right-div {
+    font-size: 45px;
+    width: 70px;
+    height: 63%;
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 176px;
+    left: 122px;
+    overflow: hidden;
+
+}
+
+.blocks:nth-child(3) #bottom-div {
+    font-size: 45px;
+    width: 85%;
+    height: 64px;
+    position: fixed;
+    bottom: 118px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    left: 116px;
+}
+
+/* =========  fourth div  ================= */
+
+
+.blocks:nth-child(4) #top-div {
+    width: 80%;
+    height: 59px;
+    font-size: 45px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    left: 167px;
+    position: relative;
+}
+
+.blocks:nth-child(4) #left-div {
+    width: 70px;
+    height: 51%;
+    position: fixed;
+    right: 177px;
+    font-size: 45px;
+    top: 239px;
+    overflow: hidden;
+}
+
+.blocks:nth-child(4) #right-div {
+    font-size: 45px;
+    width: 70px;
+    height: 50%;
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 242px;
+    left: 185px;
+    overflow: hidden;
+
+}
+
+
+.blocks:nth-child(4) #bottom-div {
+    font-size: 45px;
+    width: 77%;
+    height: 67px;
+    position: fixed;
+    bottom: 171px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    left: 185px;
+}
+
+
+/* =========  fifth div  ================= */
+
+.blocks:nth-child(5) #top-div {
+    width: 70%;
+    height: 60px;
+    font-size: 45px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 246px;
+}
+
+.blocks:nth-child(5) #left-div {
+    width: 70px;
+    height: 38%;
+    position: fixed;
+    right: 237px;
+    font-size: 45px;
+    top: 300px;
+    overflow: hidden;
+}
+
+.blocks:nth-child(5) #right-div {
+    font-size: 44px;
+    width: 70px;
+    height: 36%;
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    top: 311px;
+    left: 247px;
+
+}
+
+.blocks:nth-child(5) #bottom-div {
+    font-size: 45px;
+    width: 70%;
+    height: 67px;
+    position: fixed;
+    bottom: 227px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    left: 246px;
+}
+
+
+/* =========  sixth div  ================= */
+
+.blocks:nth-child(6) #top-div {
+    width: 63%;
+    height: 60px;
+    font-size: 43px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 302px;
+}
+
+.blocks:nth-child(6) #left-div {
+    width: 70px;
+    height: 26%;
+    position: fixed;
+    right: 293px;
+    font-size: 45px;
+    top: 357px;
+    overflow: hidden;
+}
+
+.blocks:nth-child(6) #right-div {
+    font-size: 45px;
+    width: 70px;
+    height: 25%;
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 363px;
+    overflow: hidden;
+    left: 305px;
+
+}
+
+.blocks:nth-child(6) #bottom-div {
+    width: 63%;
+    height: 60px;
+    font-size: 43px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    left: 302px;
+    bottom: 294px;
+}
+
+/* =========  seventh div  ================= */
+
+.blocks:nth-child(7) #top-div {
+    width: 54%;
+    height: 60px;
+    font-size: 45px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 374px;
+}
+
+.blocks:nth-child(7) #left-div {
+    width: 70px;
+    height: 13%;
+    position: fixed;
+    right: 360px;
+    font-size: 45px;
+    top: 421px;
+    overflow: hidden;
+}
+
+.blocks:nth-child(7) #right-div {
+    font-size: 45px;
+    width: 70px;
+    height: 12%;
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 426px;
+    overflow: hidden;
+    left: 371px;
+
+}
+
+.blocks:nth-child(7) #bottom-div {
+    width: 55%;
+    height: 60px;
+    font-size: 45px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    left: 368px;
+    bottom: 354px;
+}
+
+button {
+    font-size: 24px;
+    padding: 10px;
+    margin-right: 5px;
+}

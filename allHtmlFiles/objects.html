@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        //  singleton
+
+        //   object literals
+
+        const JsUser = {
+            name: "Anjani",
+            age: 22,
+            email:"user@google.com",
+            isLoggedIn:false
+        }
+
+         //const tinderUser = new Object() //-----  Its a Singleton Object   -------
+        //  const tinderUser = { }  // ----------- non singleton object-------------Both are same 
+        //  tinderUser.id= "1234abc"
+        //  tinderUser.name="anjani"
+        //  tinderUser.isLoggedIn= false
+        //   //console.log(tinderUser);
+        //    const regularUsers ={
+        //     email:"user@google.com",
+        //     fullname:{
+        //         userfullname:{
+        //             fristname:"anjani",
+        //             lastname:"Tomar"
+        //         }
+        //     }
+        //    }
+        //    console.log(regularUsers.fullname.userfullname.lastname)
+        
+/* Arrays are used in programming for a variety of reasons due to their versatility and efficiency in storing and accessing multiple elements of the same type.
+ Here are some key reasons why arrays are commonly used:
+
+1. **Grouping Data**: Arrays allow you to group related data together under one variable name. For example, you can store a list of numbers, strings, objects,
+ or any other type of data within an array.
+
+
+2. **Sequential Access**: Arrays provide indexed access to their elements, meaning you can access elements based on their position or index in the array. This allows 
+for efficient sequential access to elements.
+
+3. **Iteration**: Arrays can be easily traversed or iterated over using loops (such as for loops). This makes it convenient to perform operations on each element of the array.
+
+4. **Efficient Memory Allocation**: Arrays allocate memory in contiguous blocks, which makes accessing elements by index more efficient compared to other data 
+structures like linked lists.
+
+5. **Dynamic Sizing**: Many programming languages support dynamic arrays, which can resize themselves dynamically as elements are added or removed.
+ This flexibility makes arrays suitable for situations where the size of the data set is not known in advance.
+
+6. **Passing Multiple Values**: Arrays allow you to pass multiple values to functions or methods using a single parameter. This simplifies function 
+signatures and improves code readability.
+
+7. **Data Structures**: Arrays serve as the basis for more complex data structures such as stacks, queues, heaps, and matrices. These data structures 
+are built on top of arrays and provide additional functionality for specific use cases.
+Overall, arrays are fundamental data structures in programming and are widely used due to their simplicity, efficiency, and versatility in handling collections of data.*/
+        // const cource = {
+        //     courcename:"js in hindi",
+        //     price:"999",
+        //     courceInstractor:"hitesh"
+        // }
+        // const {courceInstractor :instractor } = cource
+        // console.log(instractor);
+
+        // const demo = {
+        //     demoname: "anuj",
+        //     price:"999",
+
+        //     welcome:function() {
+        //         console.log(`${this.demoname} , welcome to web`)
+        //         console.log(this)
+        //     }
+        // }
+        // demo.welcome()
+        // demo.demoname = "sam"
+        // demo.welcome()
+
+
+
+
+//         const array = [1, 2, 3, 4, 5];
+// array.splice(0,  'a', 'b'); // Removes elements at index 1 and 2, adds 'a' and 'b' at index 1
+// console.log(array);
+
+
+
+// function myFram  () {
+//     let x = document.forms["myName"]["fname"].value;
+//     if(x == "")
+//     {
+//         alert("pls fill your name");
+//         return false;
+//     }
+    
+// }
+// function addMyName () {
+//     let x =document.forms["myForm"]["fname"].value;
+//     if(x == "")
+//     {
+//         alert("pls fiil name");
+//         return false;
+//     }
+// }
+// let x = myFunction (3,4)
+//  function myFunction(y,z){
+//     return y*z;
+//  }
+//  console.log(x);
+// const person ={
+//     age:"22",
+//     id:"3"
+// }
+// function person()
+// {
+//     console.log(age);
+// }
+       //console.log(a)
+
+
+
+       // let const variable 
+      
+//  try{
+//       a=2;
+//     var a;   
+//     console.log("good Morning");  
+//     console.log(a)
+//  }  catch(err){
+//     console.log("Hello")
+//  }
+      
+
+//  document.write(myDemo(2, 4));
+//   function myDemo(a,b) {
+// return a*b;
+//   }
+        //var a=2;
+        //console.log(x)
+
+// +++++++++++  Invoking (Started)    ++++++++++++++
+
+    // (function () {
+    //     let x = "Hello ! I will invoke by myself";
+    //     console.log(x)
+    // })()
+
+// function myFunction() {
+//     return arguments.length;
+
+// }
+// console.log(myFunction(2,4,4));
+
+
+//  function myFunction (a,b){
+//     return a*b;
+//  }
+// console.log(myFunction.toString());
+
+// the output is ------------>// function myFunction (a,b){return a*b;}
+ 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.join(" + "));
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.pop());
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.push("Kiwi"));
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.shift());
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.unshift("Kiwi"));
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.at(2));
+// console.log(fruits);
+
+//const fruits = ["Banana", "Orange", "Apple", "Mango", "kiwi" ,"jakfruit","lichy"];
+// console.log(fruits.pop());
+// console.log(fruits);
+      // console.log(fruits.copyWithin(3,1));
+  //     for(let i=0 ; i<20; i++){
+  // if(i % 2 == 0){
+  //   console.log("the remainder is :" +i);
+  // }
+  //     }
+
+
+
+  // let i=0;
+  // while(i<10){
+  //   console.log("hello");
+  //   i++
+  // }
+      
+  //  let i = 10;
+  // do{
+  //  i++
+  //   console.log("helo");
+  // }while(i<10)
+
+//   ++++++++++++++++++++++++++++++++++++++++++++  for ..in   loop  ++++++++++++++++++++++++
+// Objects
+
+// let animal={
+//   name:"cow",
+//   leg:"4"
+// }
+// for(let key in animal){
+//   console.log(key , animal[key])  
+// }
+
+
+///arrays
+
+
+//let names =["rahul", "anju" ,"tom" ,"raj"];
+// for(let index in names ){
+//   console.log(index, names[index])
+// }
+
+
+//  ++++++++++++++++++++++++++  for ......  of  loop    +++++++++++++++++++++++ 
+
+// let names =["rahul", "anju" ,"tom" ,"raj"];
+// for(let  name of names){
+//   console.log(name)
+// }
+
+
+// arrow functions
+
+// const sayHello = (name) =>
+// {
+//   console.log("Say Hello"+ name);
+// }
+// sayHello(" herry")
+
+  // const users ={
+  //   username:"anjani",
+  //   fullname:"Tomar",
+  //   age:22,
+
+  //   welcomeMessage:function () {
+  //        console.log(`${this.username}  , Welcome to website`)
+  //        //console.log(this)
+  //   }
+ 
+  // }
+  // // users.welcomeMessage()
+  // // users.username = "sam"
+  // // users.welcomeMessage()
+  // console.log(this)
+
+// const user = {
+//   name:"anjani",
+//   fullName:"Tomar",
+//   age:22,
+//   student:"yes",
+//     users:function () {
+//       console.log(`${this.name} , this the code`);
+//       //console.log(this)
+//     }
+// }
+// user.users()
+// console.log(this)
+// const user = (a,b) => {
+ 
+//   return a*b
+// } 
+//  console.log(normal.prototype)
+// user(2,8)
+
+// const months = () => {
+//     const monthNumber = parseInt(prompt("Enter the  number"), 10);
+
+//     switch(monthNumber) {
+//         case 1:
+//             document.write(2,3);
+//             break;
+//         case 2:
+//             document.write("3 "," 4");
+//             break;
+//         case 3:
+//             document.write("4  5");
+//             break;
+//         case 4:
+//             document.write(5,6);
+//             break;
+//         case 5:
+//             document.write(6,7);
+//             break;
+//         case 6:
+//             document.write(7,8);
+//             break;
+//         case 7:
+//             document.write(8,9);
+//             break;
+//         default:
+//             document.write("Invalid  number");
+//             break;
+//     }
+// }
+
+// months();
+  
+//  function numbers() {
+//       for(let i=1 ; i<=n; i = i+1){
+        
+//       }
+//  }
+
+// function getNextNumbers(input) {
+//     input = parseInt(input);
+//     if (isNaN(input)) {
+//         return "Invalid input. Please enter a number.";
+//     }   
+//     const next1 = input + 1;
+//     const next2 = input + 2;
+//     return `${next1}  ${next2}.`;
+// }
+
+// for (let i = 1; i <= 1; i++)
+// {
+//   const userInput = prompt("Enter a number:");
+//   const result = getNextNumbers(userInput,i);
+//   console.log(result);
+// }
+                     
+
+// the answer is 
+
+// function getNumbers(input){
+
+//   input = parseInt(input)
+
+//   if(isNaN(input)){
+//     console.log("pls enter a nubmber");
+//   }
+//   const num1 =input +1
+//   const num2 =input +2
+
+//   return `${num1} ${num2}`;
+//  }
+
+//    const userInput = prompt("Enter a number pls");
+//    const result = getNumbers (userInput);
+//    console.log(result); 
+
+
+
+
+    // const arr = [1,2,3,4,5,6];
+
+
+    // for (const num of arr) {
+    //   console.log(`the value of num : ${num}`)
+      
+    // }
+    // const greetings = "Heloworld"
+    // for (const greet of greetings) {
+    //   console.log(`Each char is : ${greet}`)
+      
+    // }
+
+
+//      const myObject = new Map ()
+//      myObject.set('IN' , 'India')
+//      myObject.set('USA' , 'united states of America')
+//      myObject.set('fr' , 'France')
+//      myObject.set('IN' , 'India')
+
+     
+// for (const key in myObject) {
+
+//   console.log(key)
+//   // if (Object.hasOwnProperty.call(myObject, key)) {
+//   //   const element = myObject[key];
+    
+//   // }
+// }
+
+
+
+// ================     const code = ["python", 'c++' , 'java' , 'html' , 'react']
+
+
+
+// for (const key in code) {
+//  console.log(key)
+// }
+
+// call back functions ++++++++++++++++++++++++++
+
+// code.forEach( function (item) {
+//   console.log(item)
+// } )
+
+// Arrow function +++++++++++++++++++++++++
+
+// code.forEach(  (item) => {
+//   console.log(item)
+// })
+
+  // function printMe (item){
+  //   console.log(item)
+  // }
+
+  // code.forEach(printMe)
+
+
+//   const myCoding = [
+//     {
+//       languageName:"javascript",
+//       extention:'js'
+//     },
+//     {
+//       languageName:"java",
+//       extention:'java'
+//     },
+//     {
+//       languageName:"react",
+//       extention:'jsx'
+//     },
+//     {
+//       languageName:"pythone",
+//       extention:'py'
+//     },
+//   ]
+
+// myCoding.forEach( (item) => {
+//   document.write(`${item.extention}`)
+// }  )
+
+
+// const obj = {
+//   name: 'deeecode',
+//   age: 200,
+//   print: function() {
+//     const print2 = () => {
+//       console.log(this)
+//     }
+    
+//     print2()
+//   }
+// }
+
+// obj.print()
+
+
+// function myNum(input)  {
+//     input= parseInt(input)
+
+//     if(isNaN(input)){
+//       console.log("please enter the number only");
+//     }
+
+//     const num1 = input + 1 ;
+//     const num2 = input + 2 ;
+// return `${num1} ${num2}`
+
+// }
+// const userInput = prompt("Enter the number");
+// const result = myNum(userInput);
+// console.log(result);
+
+// function myNum(input) {
+//     input = parseInt(input);
+
+//     if (isNaN(input)) {
+//         console.log("Please enter a number only");
+//         return;
+//     }
+
+//     let result = '';
+//     for (let i = input; i < input + 2; i++) {
+//         //result += i + ' ';
+//         result  = result + (i +' ') 
+//     }
+//     return result;
+// }
+
+// const userInput = prompt("Enter the number");
+// const result = myNum(userInput);
+// console.log(result);
+    
+// const books = [
+//     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+//     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+//     { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+//     { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+//     { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+//     { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+//     { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+//     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+//     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+//   ];
+
+//  // let userBooks = books.filter( (bk) => bk.genre === 'History')
+
+//   userBooks = books.filter( (bk) => bk.genre === "History")
+//   console.log(userBooks);
+
+function makeFun (){
+  const name = "anjani";
+
+  function displayName (){
+    console.log(name)
+  }
+  return displayName ;
+}
+const myFunc= makeFun();
+myFunc();
+
+
+
+    </script>
+    </head>
+      <body>
+ 
+        <!-- <form name="myName" action="/perfom" onsubmit="return myFram() " method="post" >
+   Name <input name="fname" type="text">
+   <input type="submit" value="submit">
+  </form>  -->
+
+  </body>  
+
+</html>

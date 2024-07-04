@@ -1,0 +1,406 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+
+        //----------------------- Oprators --------------------//
+
+      // 1] ++++++++++++++++++   Arithmetic Operators   +++++++++++++++++
+
+
+// let a = 20;
+// let b = 2;
+
+// document.write(a + b + "\n"); // Output: 22
+// document.write(a - b + "\n"); // Output: 18
+// document.write(a * b + "\n"); // Output: 40
+// document.write(a / b + "\n"); // Output: 10
+// document.write(a ** b + "\n"); // Output: 400
+// document.write(a % b + "\n"); // Output: 0
+
+// 2] +++++++++++++   assingnment oprators +++++++++
+
+// let a = 5;
+// a += 3; 
+// console.log(a);
+// let b = 10;
+// b -= 4; 
+// console.log(b); 
+
+// 3] ++++++++++  Comparison Operators +++++++++++++
+
+// let num1 = 10;
+// let num2 =2;
+//  document.write(num1 == num2)//false
+//  document.write(num1 > num2) //true
+//  document.write(num1 < num2)//false
+//  document.write(num1 !== num2)//true
+//  document.write(num1 != num2)//true
+//  document.write(num1 === num2)//false
+
+// 4] ++++++++++++++++++++ Logical oprators ++++++++++++++
+ 
+// let isSunny = true;
+// let isCold =false;
+
+// document.write(isSunny && isCold);
+// document.write(isSunny || isCold);
+// document.write(!isSunny)
+
+// 5] +++++++++++++++++ Bitwise oprators ++++++++++++
+
+  //let num3 =4                                                                                                                                                                                                                                                               ;
+  //let num4 = 5;
+   //document.write(num3 & num4)
+   // outpput 4
+   //document.write(num3 | num4)
+   // output 5
+   //document.write(num3 ^ num4)
+   // output 1
+
+
+   // 6] ++++++++++++++++++  Unary oprators ++++++++++++++
+
+
+//    let countr = 0;
+//     countr++;
+//     document.write(countr);
+//      countr--;
+//      document.write(countr);
+
+
+//      let number =10 ;
+//      document.write(number + 1);
+
+
+
+// 7] ++++++++++++++++++++++++++++ Conditional (Ternary) oprators
+
+
+//let age = 20;
+//  let eligibility = (age >= 18) ? 'eligible ': 'noteligible';
+//  document.write(eligibility);
+
+
+//++++++++++++++++++++++++++++++++//
+
+// if (age >= 18){
+// document.write("eligible");
+
+// }else{
+//     document.write("notEligible");
+// }
+
+
+// 8] ++++++++++++++++++++++++++  string Oprators ++++++++++++++++++
+
+
+// let name = "Anjani";
+// let surname = "Tomar";
+// document.write(name + " "+ surname);
+
+// +++++++++++++++++++++++++++ Array +++++++++++++++++++++
+// const car = {type:"Fiat", model:"500", color:"white"};
+//  document.write(car.model);
+
+// function showDate() {
+ 
+//   let currentDate = new Date().toLocaleString(); 
+//   document.querySelector("button").innerText = "The current date is: " + currentDate;
+// }
+// function showDate (){
+//     let currentDate = new Date().toLocaleString();
+//     document.querySelector("button").innerText = "the current date is : " +   currentDate  
+// }
+
+
+
+
+
+// let myDate = new Date()
+
+// let myCreatedDate = new Date(2002, 8,23)
+
+//  console.log(myCreatedDate.toDateString()); 
+
+
+
+
+
+
+//+++++++++++++++++++++++  Arrays   ++++++++++++++++++++++++++
+
+
+// const myArr = [1,2,3,4,5];
+// const newArr2 =["a" , "b ", "c" ,"d"];
+// const newArr3 =["anjnai", "krishn" , 2,3 ];
+
+// const allArr = myArr.concat(newArr2)
+// console.log(allArr);
+
+// almost time we use Spread  method (...)
+
+//const all_Arr  = [...myArr,...newArr2, ...newArr3];//-------------  Spread ---+
+//console.log(all_Arr);
+const anotherArr = [1,2,3,4,[5,6,7,[9,6,3]]]
+const realAnotherArr = anotherArr.flat(Infinity)
+console.log(realAnotherArr);
+ console.log(Array.isArray("anjani"));
+ console.log(Array.from("anjani"));
+// myArr.pop()
+// console.log(myArr);
+
+//"use strict"; // treat all js code as newer version
+
+//alert('Hello'); we are using nodejs , not browser
+
+
+// let anothervalue = "anjanitomar";
+// let  myvalue = anothervalue;
+// myvalue = "chaiorcode";
+// console.log(anothervalue);
+// console.log(myvalue);
+
+
+
+// let userOne = {
+//     email:"anju@google.com",
+//     upi: "anju@ybl"
+// }
+//   let userTwo = userOne
+//   userTwo.email = "user@google.com"
+
+//   console.log(userOne.email)
+//   console.log(userTwo.email)
+
+
+
+//   const url = "https://anjani.com/hiteshi%20software"
+//   console.log(url.replace("%20" , "-"))
+//   console.log(url.includes("anjani"))
+   </script>
+        <button onclick="showDate()">The time is?</button>
+        <h1>hello</h1> 
+</body>
+</html> -->
+
+
+<!-- 
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <style>
+    .bg-black{
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <body class="bg-black">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+<div class="parent">
+  <div class="day">Monday</div>
+  <div class="day">Tuesday</div>
+  <div class="day">Wednesday</div>
+  <div class="day">Thursday</div>
+</div> 
+<script>
+// const parent = document.querySelector('.parent')
+// //console.log(parent.children[0].innerHTML);
+// for (let i = 0; i < parent.children.length; i++) {
+
+// console.log( parent.children[i].innerHTML);
+  
+// }
+// parent.children[1].style.color = "blue"
+
+
+// const div = document.createElement("div");
+// console.log(div)
+// div.className = " main"
+// div.id =Math.round( Math.random() * 10 + 1) 
+// div.setAttribute("title" , "generated title")
+// div.style.padding = "20px"
+// div.style.backgroundColor = "green"
+// //div.innerText = "Chai our code"  // values ko overwrite karta hai
+// const addText = document.createTextNode("Jully Hello")
+// div.appendChild(addText)
+
+// document.body.appendChild(div)
+
+
+function addLanguage (langName){
+const li =  document.createElement('li');
+li.innerHTML = `${langName}`
+document.querySelector('.language').appendChild(li)
+
+}
+addLanguage("pyhon")
+addLanguage("react")
+
+function addOptilanguage (langName){
+  const li = document.createElement('li')
+  li.appendChild(document.createTextNode(langName))
+  document.querySelector(".language").appendChild(li)
+
+}
+addOptilanguage("Django")
+
+// Edit
+
+const secondlang = document.querySelector("li:nth-child(2)")
+  //secondlang.innerHTML = "mojo"
+const newli = document.createElement('li')
+newli.textContent = "Mojoooo"
+secondlang.replaceWith(newli)
+
+
+const fristlang = document.querySelector('li:first-child')
+const lifrist  = document.createElement('li')
+lifrist.textContent = "Jully"
+fristlang.replaceWith(lifrist)
+
+
+//  Remove  
+
+
+ const lastlang = document.querySelector('li:last-child')
+ lastlang.remove()
+
+
+ 
+</script>
+  </body>
+  </html> -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+      #btn {
+          border: none;
+      }
+  
+      .btton {
+          font-size: 30px;
+      }
+  
+      .emoji {
+          font-size: 80px;
+      }
+      body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      
+  }
+  .top-bar{
+      width: 100%;
+      height: 50px;
+      background-color: bisque;
+      position: fixed;
+  }
+  .left-bar{
+      width: 50px;
+      height: 100%;
+      background-color: bisque;
+      position: fixed;
+      right: 0;
+  }
+  .right-bar{
+      width: 50px;
+      height: 100%;
+      background-color: bisque;
+      position: fixed;
+      left: 0;
+  }
+  .bottom-bar{
+      width: 100%;
+      height: 50px;
+      background-color: bisque;
+      position: fixed;
+      bottom: 0;
+  }
+  #display-emo{
+      font-size: 40px;
+  /* display: table-caption; */
+  }
+
+  .click-btn{
+      text-align: center;
+      position: fixed;
+      top: 80px;
+      left: 70px;
+  }
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  </style>
+  <body>
+      <div class="top-bar"></div>
+      <div class="left-bar"></div>
+      <div class="right-bar"></div>
+      <div class="bottom-bar"></div>
+      <div class="click-btn"> 
+           <button id="btn" class="btton">😎</button>
+           <button id="icon"><i class="fa fa-close"></i></button>
+      </div>
+     
+  </body>
+  <script>
+     const emobtn = document.querySelector('#btn');
+     const crossbtn = document.querySelector('#icon');
+  
+     const topBar = document.querySelector(".top-bar");
+     const leftBar = document.querySelector(".left-bar");
+     const bottomBar = document.querySelector(".bottom-bar");
+     const rightBar = document.querySelector(".right-bar");
+  
+  emobtn.addEventListener('click', function () {
+      const emojisArray = ["😀", "😁", "😂", "😃", "😄", "😅", "😆", "😇", "😈", "😉", "😊", "😋", "😌", "😍", "😎"];
+      const randomIndex = Math.floor(Math.random() * emojisArray.length);
+   
+      
+      if (topBar.contains(emobtn)) {
+          topBar.textContent += emojisArray[randomIndex];
+      } else if (leftBar.contains(emobtn)) {
+          leftBar.textContent += emojisArray[randomIndex];
+      } else if (bottomBar.contains(emobtn)) {
+          bottomBar.textContent += emojisArray[randomIndex];
+      } else if (rightBar.contains(emobtn)) {
+          rightBar.textContent += emojisArray[randomIndex];
+      }
+  });
+  
+  crossbtn.addEventListener('click', function () {
+   
+      topBar.textContent = "";
+      leftBar.textContent = "";
+      bottomBar.textContent = "";
+      rightBar.textContent = "";
+  });
+  
+  </script>
+  </html>
+   
+
+   

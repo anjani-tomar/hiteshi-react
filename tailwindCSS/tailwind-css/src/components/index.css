@@ -1,0 +1,30 @@
+/* index.css */
+
+.list {
+    width: 600px;
+ 
+    height: 300px;
+
+    overflow-y: auto;
+
+}
+
+.fade-item {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 10px;
+}
+
+.animate-fadeIn {
+    opacity: 1;
+}
+
+.animate-fadeOut {
+    opacity: 0;
+}
+
+#counter {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+}

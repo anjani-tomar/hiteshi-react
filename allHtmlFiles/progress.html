@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
+
+    * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-items: center;
+        background-color: #222;
+    }
+
+    .container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .progess-group {
+        background-color: #535c68;
+        width: 300px;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+
+    .circular-progress {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .circular-progress::before {
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-color: #535c68;
+    }
+
+    .course-value {
+        position: relative;
+        color: #eb4d4b;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .text {
+        margin-top: 18px;
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container"></div>
+</body>
+<script>
+    const container = document.querySelector(".container");
+    const courses = [
+        { course: "HTML", percent: 100, color: "#f9ca24" }
+    ];
+
+    courses.forEach((course) => {
+        container.innerHTML += `
+    <div class="progess-group">
+        <div class="circular-progress">
+            <span class="course-value" style="color:${course.color}">0%</span>
+        </div>
+        <label class="text" style="color:${course.color}">${course.course}</label>
+    </div>
+    `;
+    });
+
+
+
+    const progressGroups = document.querySelectorAll(".progess-group");
+
+    progressGroups.forEach((progress, index) => {
+        let progressStartValue = 0;
+        let progressStartEnd = courses[index].percent;
+        let speed = 500;
+        let progessTimer = setInterval(() => {
+            progressStartValue++;
+            if (progressStartValue == progressStartEnd) {
+                clearInterval(progessTimer);
+            }
+            progress.querySelector(".circular-progress").style.background = `
+    conic-gradient(${courses[index].color} ${3.6 * progressStartValue}deg, #fff 0deg)`;
+
+            progress.querySelector(".course-value").innerHTML = progressStartValue + "%";
+        }, speed);
+    });
+</script>
+
+</html>

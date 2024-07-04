@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+    button {
+        padding: 21px;
+    }
+    .btn{
+        text-align: center;
+    }
+    #yellow {
+        background-color: yellow;
+    }
+    #blue {
+        background-color: blue;
+    }
+    #pink {
+        background-color: pink;
+    }
+    #grey {
+        background-color: gray;
+    }
+    #purple {
+        background-color: purple;
+    }
+    #orange {
+        background-color: orange;
+    }
+    .emo  {
+        text-align: center;
+    }
+
+    .display_block{
+        width: 400px;
+        margin-left: 94px;
+        text-align: center;
+    } 
+    .cross-btn .fa{
+        font-size: 20px;
+        text-align: right;    
+    }    
+    .top-bar{
+        width: 100%;
+        height: 65px;
+        font-size: 44px;
+        overflow: hidden;
+    }
+    .left-bar{
+        width: 70px;
+        height: 83%;
+        position: fixed;
+        right: 0;
+        font-size: 45px;
+        top: 51px;
+    }
+    .right-bar{
+        font-size: 45px;
+        width: 70px;
+        height: 86%;
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .bottom-bar{
+        font-size: 45px;
+        width: 100%;
+        height: 67px;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    } 
+       /* ========================================================== second div Bar  ================================================================================ */
+       .top-bar2{
+        width: 90%;
+        height: 65px;
+        font-size: 44px;
+        overflow: hidden;
+        /* background-color: aqua; */
+        position: relative;
+        right: -69px;
+    }
+    .left-bar2{
+        width: 70px;
+        height: 71%;
+        position: fixed;
+        right: 69px;
+        font-size: 45px;
+        top: 130px;
+        /* background-color: aqua; */
+    }
+    .right-bar2{
+        font-size: 45px;
+        width: 70px;
+        height: 72%;
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+        /* background-color: aqua; */
+        
+        left: 71px;
+        top: 130px;
+    }
+    .bottom-bar2{
+        font-size: 45px;
+        width: 89%;
+        height: 70px;
+        position: fixed;
+        bottom: 67px;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        /* background-color: aqua; */
+        right: 69px;
+    } 
+    /* ==================================================================================== third div Bar   ====================================================================== */
+    .top-bar3{
+        width: 79%;
+        height: 65px;
+        font-size: 44px;
+        overflow: hidden;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+        position: relative;
+        right: -137px;
+    }
+    .left-bar3{
+        width: 70px;
+        height: 56%;
+        position: fixed;
+        right: 139px;
+        font-size: 45px;
+        top: 192px;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+    }
+    .right-bar3{
+        font-size: 45px;
+        width: 70px;
+        height: 59%;
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+        
+        left: 141px;
+        top: 194px;
+    }
+    .bottom-bar3{
+        font-size: 45px;
+        width: 78%;
+        height: 67px;
+        position: fixed;
+        bottom: 137px;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        /* background-color: rgba(255, 81, 0, 0.795); */
+        right: 139px;
+    } 
+    .emoji{
+        cursor: pointer;
+        font-size: 40px;
+        border: none;
+        padding: 0;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #e1e9f04f;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    }
+</style>
+<body style="margin: 0;">
+
+<div class="div-bar">
+    <div class="top-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+    <div class="bottom-bar"></div>
+</div>
+<div class="div-bar2">
+    <div class="top-bar2"></div>
+    <div class="left-bar2"></div>
+    <div class="right-bar2"></div>
+    <div class="bottom-bar2"></div>
+</div>
+<div class="div-bar3">
+    <div class="top-bar3"></div>
+    <div class="left-bar3"></div>
+    <div class="right-bar3"></div>
+    <div class="bottom-bar3"></div>
+</div>
+<!-- <div class="btn">
+    <button class="button" id="yellow">yellow</button>
+    <button class="button" id="blue">blue</button>
+    <button class="button" id="pink">pink</button>
+    <button class="button" id="grey">gray</button>
+    <button class="button" id="orange">orange</button>
+    <button class="button" id="purple">purple</button>
+    <button class="button" id="white">white</button>
+</div> -->
+<div class="emo">
+    <button class="emoji" >😍</button>
+    <button class="emoji" >😊</button>
+    <button class="emoji" >👌</button>
+    <button class="emoji" >😁</button>
+    <button class="emoji" >😎</button>
+    <button class="emoji" >😃</button>
+    <button class="emoji" >🤷‍♂️</button> <br>
+    <button class="cross-btn" id="mySidebar1" style="color: blue; font-weight: 600;">
+        play
+    </button>
+    <button class="cross-btn" id="mySidebar" style="color: blue; font-weight: 600;">
+        pause
+    </button>
+</div>   
+
+</body>
+<script>
+    const emojis = document.querySelectorAll('.emoji');
+    const clearBtn = document.querySelector('.cross-btn');
+
+    let emojiIndex = 0;
+    let emojiInterval;
+
+    function playEmojis() {
+        emojiInterval = setInterval(() => {
+            if (emojiIndex < emojis.length) {
+                const emoji = emojis[emojiIndex];
+                const emojiText = emoji.textContent;
+                displayEmoji(emojiText);
+                emojiIndex++;
+            } else {
+                clearInterval(emojiInterval);
+            }
+        }, 1000); // Adjust the interval as needed
+    }
+
+    function pauseEmojis() {
+        clearInterval(emojiInterval);
+    }
+
+    function displayEmoji(emojiText) {
+        const currentBar = getCurrentBar();
+        if (currentBar.scrollHeight > currentBar.clientHeight) {
+            if (currentBar.nextElementSibling) {
+                currentBar.textContent += emojiText;
+            }
+        }
+    }
+
+    function getCurrentBar() {
+        const bars = document.querySelectorAll('.top-bar, .left-bar, .bottom-bar, .right-bar, .top-bar2, .left-bar2, .bottom-bar2, .right-bar2, .top-bar3, .left-bar3, .bottom-bar3, .right-bar3, .top-bar4, .left-bar4, .bottom-bar4, .right-bar4, .top-bar5, .left-bar5, .bottom-bar5, .right-bar5');
+        for (const bar of bars) {
+            if (bar.textContent.length < 8) {
+                return bar;
+            }
+        }
+        return null;
+    }
+
+    emojis.forEach(function(emoji) {
+        emoji.addEventListener('click', function() {
+            const emojiText = emoji.textContent;
+            displayEmoji(emojiText);
+        });
+    });
+
+    clearBtn.addEventListener('click', function() {
+        const bars = document.querySelectorAll('.top-bar, .left-bar, .bottom-bar, .right-bar, .top-bar2, .left-bar2, .bottom-bar2, .right-bar2, .top-bar3, .left-bar3, .bottom-bar3, .right-bar3, .top-bar4, .left-bar4, .bottom-bar4, .right-bar4, .top-bar5, .left-bar5, .bottom-bar5, .right-bar5');
+        bars.forEach(bar => {
+            bar.textContent = "";
+        });
+        emojiIndex = 0;
+        clearInterval(emojiInterval);
+    });
+
+    document.getElementById('play').addEventListener('click', playEmojis);
+    document.getElementById('pause').addEventListener('click', pauseEmojis);
+</script>
+
+</html>
+<!-- {/* <div className='blocks' id='top-div4'>{emojiBlocks.top}</div>
+<div className='blocks' id='right-div4'>{emojiBlocks.right}</div>
+<div className='blocks' id='bottom-div4'>{emojiBlocks.bottom}</div>
+<div className='blocks' id='left-div4'>{emojiBlocks.left}</div>
+
+<div className='blocks' id='top-div5'>{emojiBlocks.top}</div>
+<div className='blocks' id='right-div5'>{emojiBlocks.right}</div>
+<div className='blocks' id='bottom-div5'>{emojiBlocks.bottom}</div>
+<div className='blocks' id='left-div5'>{emojiBlocks.left}</div>
+
+<div className='blocks' id='top-div6'>{emojiBlocks.top}</div>
+<div className='blocks' id='right-div6'>{emojiBlocks.right}</div>
+<div className='blocks' id='bottom-div6'>{emojiBlocks.bottom}</div>
+<div className='blocks' id='left-div6'>{emojiBlocks.left}</div> */} -->

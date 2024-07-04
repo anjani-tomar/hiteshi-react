@@ -1,0 +1,427 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    
+ #btn {
+        border: none;
+    }
+
+    .btton {
+        font-size: 30px;
+    }
+
+    .emoji {
+        font-size: 80px;
+    }
+    body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.top-bar{
+    width: 100%;
+    height: 70px;
+    background-color: bisque;
+    position: fixed;
+    font-size: 45px;
+}
+.top-bar1{
+    width: 100%;
+    height: 70px;
+    background-color: bisque;
+    position: fixed;
+    font-size: 45px;
+}
+.top-bar2{
+    width: 100%;
+    height: 70px;
+    background-color: bisque;
+    position: fixed;
+    font-size: 45px;
+}
+.top-bar3{
+    width: 100%;
+    height: 70px;
+    background-color: bisque;
+    position: fixed;
+    font-size: 45px;
+}
+.left-bar{
+    width: 70px;
+    height: 100%;
+    background-color: bisque;
+    position: fixed;
+  right: 0;
+  font-size: 45px;
+}
+.right-bar{
+    font-size: 45px;
+    width: 70px;
+    height: 100%;
+    background-color: bisque;
+    position: fixed;
+    
+}
+.bottom-bar{
+    font-size: 45px;
+    width: 100%;
+    height: 70px;
+    background-color: bisque;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.click-btn{
+    text-align: center;
+position: fixed;
+   top: 80px;
+   left: 70px;
+} 
+</style>
+<body>
+    <div class="click-btn"> 
+               <button id="icon"><i class="fa fa-close"></i></button>
+        <button id="playPause"><i class="fa fa-play"></i></button>
+    </div>
+    <div class="top-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+    <div class="bottom-bar"></div>
+</body>
+<script>
+   // const emobtn = document.querySelector('#btn');
+    const crossbtn = document.querySelector('#icon');
+    const playPauseBtn = document.querySelector('#playPause');
+    const topBar = document.querySelector(".top-bar");
+    const leftBar = document.querySelector(".left-bar");
+    const bottomBar = document.querySelector(".bottom-bar");
+    const rightBar = document.querySelector(".right-bar");
+    let intervalId;
+
+    // emobtn.addEventListener('click', function () {
+
+    // });
+
+    playPauseBtn.addEventListener('click', function () {
+
+        const emojisArray = ["😀", "😁", "😂", "😃", "😄", "😅", "😆", "😇", "😈", "😉", "😊", "😋", "😌", "😍", "😎"];
+        let index = 0;
+        intervalId = setInterval(() => {
+            if (index >= emojisArray.length) {
+                clearInterval(intervalId);
+                return;
+            }
+            displayEmoji(emojisArray[index]);
+            index++;
+        }, 1000); 
+    });
+
+    crossbtn.addEventListener('click', function () {
+            clearInterval(intervalId);
+        if (playPauseBtn.innerHTML === '<i class="fa fa-play"></i>') {
+            playPauseBtn.innerHTML = '<i class="fa fa-pause"></i>';
+            resumeInterval();
+        } else {
+            playPauseBtn.innerHTML = '<i class="fa fa-play"></i>';
+            clearInterval(intervalId);
+        }
+    });
+
+    function resumeInterval() {
+        const emojisArray = ["😀", "😁", "😂", "😃", "😄", "😅", "😆", "😇", "😈", "😉", "😊", "😋", "😌", "😍", "😎"];
+        let index = 0;
+        intervalId = setInterval(() => {
+            if (index >= emojisArray.length) {
+                clearInterval(intervalId);
+                return;
+            }
+            displayEmoji(emojisArray[index]);
+            index++;
+        }, 1000);
+     }
+
+    function displayEmoji(emoji) {
+        topBar.textContent += emoji;
+        bottomBar.textContent += emoji;
+        leftBar.textContent += emoji;
+        rightBar.textContent += emoji;
+    }
+
+    function clearBars() {
+        topBar.textContent = "";
+        bottomBar.textContent = "";
+        leftBar.textContent = "";
+        rightBar.textContent = "";
+    }
+</script>
+</html>
+ -->
+
+ <!-- <script>
+   // const buttons = document.querySelectorAll('button');
+   // const body = document.querySelector('body');
+
+    const topBar = document.querySelector(".top-bar");
+    const leftBar = document.querySelector(".left-bar");
+    const bottomBar = document.querySelector(".bottom-bar");
+    const rightBar = document.querySelector(".right-bar");
+
+    const topBar2 = document.querySelector(".top-bar2");
+    const leftBar2 = document.querySelector(".left-bar2");
+    const bottomBar2 = document.querySelector(".bottom-bar2");
+    const rightBar2 = document.querySelector(".right-bar2");
+
+    const topBar3 = document.querySelector(".top-bar3");
+    const leftBar3 = document.querySelector(".left-bar3");
+    const bottomBar3 = document.querySelector(".bottom-bar3");
+    const rightBar3 = document.querySelector(".right-bar3");
+
+    const topBar4 = document.querySelector(".top-bar4");
+    const leftBar4 = document.querySelector(".left-bar4");
+    const bottomBar4 = document.querySelector(".bottom-bar4");
+    const rightBar4 = document.querySelector(".right-bar4");
+
+    const topBar5 = document.querySelector(".top-bar5");
+    const leftBar5 = document.querySelector(".left-bar5");
+    const bottomBar5 = document.querySelector(".bottom-bar5");
+    const rightBar5 = document.querySelector(".right-bar5");
+
+    const emojis = document.querySelectorAll('.emoji');
+    const clearBtn = document.querySelector('.cross-btn');
+
+    // buttons.forEach(function(button) {
+    //     button.addEventListener('click', function(e) {
+    //         body.style.backgroundColor = e.target.id;
+    //     });
+    // });
+
+    let currentBar = topBar; 
+
+emojis.forEach(function(emoji) {
+    emoji.addEventListener('click', function() {
+        const emojiText = emoji.textContent;
+        
+        if (currentBar.scrollHeight > currentBar.clientHeight) {
+    
+            if (currentBar === topBar) {
+                currentBar = leftBar;
+            } else if (currentBar === leftBar) {
+                currentBar = bottomBar;
+            } else if (currentBar === bottomBar) {
+                currentBar = rightBar;
+            } else if (currentBar === rightBar && !topBar2.textContent) {
+             
+                currentBar = topBar2;
+            } else if (currentBar === topBar2 && !leftBar2.textContent) {
+               
+                currentBar = leftBar2;
+            } else if (currentBar === leftBar2 && !bottomBar2.textContent) {
+             
+                currentBar = bottomBar2;
+            } else if (currentBar === bottomBar2 && !rightBar2.textContent) { 
+                currentBar = rightBar2;
+            } else if (currentBar === rightBar2 && !topBar3.textContent) {
+                currentBar = topBar3;
+            } else if (currentBar === topBar3 && !leftBar3.textContent) {
+                 currentBar = leftBar3;
+            } else if (currentBar === leftBar3 && !bottomBar3.textContent) {
+                currentBar = bottomBar3;
+            } else if (currentBar === bottomBar3 && !rightBar3.textContent) {
+                currentBar = rightBar3;
+            } else if(currentBar === rightBar3 && !topBar4.textContent) {
+              currentBar = topBar4;
+            }else if (currentBar === topBar4 && !leftBar4.textContent) {
+              currentBar = leftBar4;
+            } else if (currentBar === leftBar4 && !bottomBar4.textContent) {
+              currentBar = bottomBar4;
+            }else if (currentBar === bottomBar4 && !rightBar4.textContent) {
+              currentBar = rightBar4;
+            }else if (currentBar === rightBar4 && !topBar5.textContent) {
+              currentBar = topBar5;
+            }else if (currentBar === topBar5 && !leftBar5.textContent) {
+              currentBar = leftBar5;
+            }
+            
+            else {
+                return; 
+            }
+        }
+        currentBar.textContent += emojiText;
+    });
+}); 
+
+    clearBtn.addEventListener('click', function () {
+        topBar.textContent = "";
+        leftBar.textContent = "";
+        bottomBar.textContent = "";
+        rightBar.textContent = "";
+        topBar2.textContent = "";
+        leftBar2.textContent = "";
+        bottomBar2.textContent = "";
+        rightBar2.textContent = "";
+        topBar3.textContent = "";
+        leftBar3.textContent = "";
+        bottomBar3.textContent = "";
+        rightBar3.textContent = "";
+        topBar4.textContent = "";
+        leftBar4.textContent = "";
+        bottomBar4.textContent = "";
+        rightBar4.textContent = "";
+        topBar5.textContent = "";
+        leftBar5.textContent = "";
+        bottomBar5.textContent = "";
+        rightBar5.textContent = "";
+        
+    });
+</script> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+  <h1 id="time">00 : 00</h1>
+  <br />
+  <div>
+    <button onclick="play_pause()" id="play">play</button>
+    <button onclick="reset()" id="stop" hidden>Reset</button>
+  </div>
+</div>
+</body>
+<script>
+    let time = document.getElementById("time");
+    let stopButton = document.getElementById("stop");
+    let playButton = document.getElementById("play");
+
+let timeCount = 0,
+  currentTimeout;
+
+function play_pause() {
+  let status = playButton.innerHTML;
+  if (status == "pause") {
+    playButton.innerHTML = "Resume";
+    clearInterval(currentTimeout);
+    return;
+  }
+  playButton.innerHTML = "pause";
+  stopButton.hidden = false;
+  clearInterval(currentTimeout);
+  currentTimeout = setInterval(() => {
+    timeCount++;
+    const min = String(Math.trunc(timeCount / 60)).padStart(2, 0);
+    const sec = String(Math.trunc(timeCount % 60)).padStart(2, 0);
+    time.innerHTML = `${min} : ${sec}`;
+  }, 1000);
+}
+
+function reset() {
+  stopButton.hidden = true;
+  playButton.innerHTML = "play";
+  clearInterval(currentTimeout);
+  timeCount = 0;
+  time.innerHTML = `00 : 00`;
+}
+
+</script>
+</html> -->
+<script>
+    const container = document.getElementById("container");
+    const fruits = ["🥭", "🥝", "🍎", "🍊", "🍔"];
+    const fruitsButton = document.querySelector(".emoji");
+
+    createBlocksDiv();
+
+    let arrows = [displayArrow()]; // Store the arrows in an array
+
+    function createBlocksDiv() {
+      for (let i = 0; i < 28; i++) {
+        const blocksDiv = document.createElement("div");
+        blocksDiv.classList.add("blocks-div");
+        container.appendChild(blocksDiv);
+
+        for (let j = 0; j < 50; j++) {
+          const block = document.createElement("div");
+          block.classList.add("block"); // Use a different class name here
+          blocksDiv.appendChild(block);
+        }
+      }
+    }
+
+    const blocks = document.querySelectorAll(".block");
+
+    let indexArrow = 0;
+    const fruitsIndex = [];
+
+    fruitsButton.addEventListener("click", function () {
+      blocks.forEach((block, index) => {
+        if (Math.random() > 0.99) {
+          const randomIndex = Math.floor(Math.random() * fruits.length);
+          block.textContent = fruits[randomIndex];
+        } else {
+          block.textContent = "";
+        }
+        if (fruits.includes(block.textContent)) {
+          fruitsIndex.push(index);
+        }
+      });
+    });
+
+    document.addEventListener("keydown", function (event) {
+      switch (event.key) {
+        case "ArrowUp":
+          moveArrow(-50);
+          break;
+        case "ArrowDown":
+          moveArrow(50);
+          break;
+        case "ArrowLeft":
+          moveArrow(-1);
+          break;
+        case "ArrowRight":
+          moveArrow(1);
+          break;
+        default:
+          break;
+      }
+    });
+
+    function moveArrow(direction) {
+      arrows.forEach((arrow) => {
+        arrow.remove(); 
+        indexArrow += direction;
+        if (fruitsIndex.includes(indexArrow)) {
+          arrows.unshift(displayArrow());
+        }
+      });
+    }
+
+    function displayArrow() {
+      const tempArrow = document.createElement("span");
+      const icon = document.createElement("i");
+      icon.classList.add("fa", "fa-arrow-right"); // Correct the class here
+      tempArrow.appendChild(icon);
+
+      tempArrow.style.position = "absolute"; // Use absolute positioning
+      tempArrow.style.left = "0";
+      tempArrow.style.top = "0";
+
+      container.appendChild(tempArrow); // Append to the container
+
+      return tempArrow;
+    } 
+</script>

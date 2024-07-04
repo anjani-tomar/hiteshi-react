@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Movement</title>
+    <style>
+        .container {
+     
+            width: 400px;
+            /* Adjust width as needed */
+        }
+
+        .block {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 5px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        .arrow {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="container"></div>
+
+    <button id="moveButtonTop">Move Up</button>
+    <button id="moveButtonLeft">Move Left</button>
+    <button id="moveButtonRight">Move Right</button>
+    <button id="moveButtonDown">Move Down</button>
+
+
+</body>
+    <script>
+
+        const container = document.getElementById('container');
+        const moveButtonTop = document.getElementById('moveButtonTop');
+        const moveButtonLeft = document.getElementById('moveButtonLeft');
+        const moveButtonRight = document.getElementById('moveButtonRight');
+        const moveButtonDown = document.getElementById('moveButtonDown');
+
+        const rows = 4;
+        const cols = 9;
+        let currentIndex = 0;
+
+        // Function to create blocks
+        function createBlock(index) {
+            const block = document.createElement('div');
+            block.className = 'block';
+            block.textContent = index + 1;
+            container.appendChild(block);
+            console.log(index);
+            return block;
+        }
+
+     
+        for (let i = 0; i < rows * cols; i++) {
+            createBlock(i);
+        }
+
+        const blocks = document.querySelectorAll('.block');
+        blocks[currentIndex].innerHTML = '<span class="arrow">➤</span>';
+         blocks[currentIndex+1].innerHTML = '<span class="arrow">➤</span>';
+
+        function moveArrowTop() {
+            blocks[currentIndex].innerHTML = currentIndex + 1;
+            currentIndex = (currentIndex - cols + blocks.length) % blocks.length;
+            blocks[currentIndex].innerHTML = '<span class="arrow">➤</span>';
+            blocks[currentIndex + 1].innerHTML = '<span class="arrow">➤</span>';
+
+        }
+
+        function moveArrowLeft() {
+            blocks[currentIndex].innerHTML = currentIndex + 1;
+            currentIndex = (currentIndex - 1 + cols) % cols === cols - 1 ? currentIndex : currentIndex - 1;
+            blocks[currentIndex].innerHTML = '<span class="arrow">➤</span>';
+            blocks[currentIndex + 1].innerHTML = '<span class="arrow">➤</span>';
+
+        }
+
+        function moveArrowRight() {
+            blocks[currentIndex].innerHTML = currentIndex + 1;
+            currentIndex = (currentIndex + 1) % cols === 0 ? currentIndex : currentIndex + 1;
+            blocks[currentIndex].innerHTML = '<span class="arrow">➤</span>';
+            blocks[currentIndex + 1].innerHTML = '<span class="arrow">➤</span>';
+          
+
+        }
+
+        function moveArrowDown() {
+            blocks[currentIndex].innerHTML = currentIndex + 1;
+            currentIndex = (currentIndex + cols) % blocks.length;
+            blocks[currentIndex].innerHTML = '<span class="arrow">➤</span>';
+        }
+
+        // Event listeners for arrow movement buttons
+        moveButtonTop.addEventListener('click', moveArrowTop);
+        moveButtonLeft.addEventListener('click', moveArrowLeft);
+        moveButtonRight.addEventListener('click', moveArrowRight);
+        moveButtonDown.addEventListener('click', moveArrowDown);
+
+
+    </script>
+
+</html> 

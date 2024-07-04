@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+</head>
+<style>
+    
+
+    #container {
+      width: 680px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .blocks {
+      text-align: center;
+      height: 22px;
+      width: 22px;
+      background-color: aqua;
+      border: 1px solid #faf4f4;
+    }
+  
+    .buttons {
+      text-align: end;
+      margin-right: 20px;
+    }
+  
+    .fa_fa-arrow-right {
+      display: inline-block;
+      height: 6px;
+      width: 12px;
+      background: rgb(250, 0, 0);
+      border-radius: 5px;
+    
+    }
+</style>
+
+<body style="margin: 0px 0px 0px 7px;">
+
+    <div id="container"></div>
+
+    <div class="buttons">
+
+        <button class="emoji">Draw Fruit</button>
+
+    </div>
+
+
+
+    <script>
+        const blocks = document.querySelectorAll(".blocks");
+            const container = document.getElementById("container");
+            const fruits = ["🥭", "🥝", "🍎", "🍊", "🍔"];
+            const fruitsButton = document.querySelector(".emoji");
+            const rows = 25;
+            const cols = 28;
+            let currentIndex = 0;
+            let arrowArr = [];
+            const fruitsIndex = [];
+            let arrow_container = [">1", ">2", ">3", ">4"];
+
+            for (let i = 0; i < rows * cols; i++) {
+                createBlocksDiv(i);
+            }
+            function createBlocksDiv() {
+                const block = document.createElement("div");
+                block.className = "blocks";
+                container.appendChild(block);
+            }
+
+            let arrow = displayArrow();
+
+            fruitsButton.addEventListener("click", function () {
+                const blocks = document.querySelectorAll(".blocks");
+                blocks.forEach((block, index) => {
+                    if (Math.random() > 0.98) {
+                        const randomIndex = Math.floor(Math.random() * fruits.length);
+                        block.textContent = fruits[randomIndex];
+                    } else {
+                        block.textContent = "";
+                    }
+                    if (index === blocks.length - 1) {
+                        arrow = displayArrow();
+                    }
+                    if (fruits.includes(block.textContent)) {
+                        fruitsIndex.push(index);
+                        console.log(index);
+                    }
+                });
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (arrow) {
+                    arrow.remove();
+                }
+                switch (event.key) {
+                    case "ArrowUp":
+                        moveArrowTop();
+                        break;
+                    case "ArrowDown":
+                        moveArrowDown();
+                        break;
+                    case "ArrowLeft":
+                        moveArrowLeft();
+                        break;
+                    case "ArrowRight":
+                        moveArrowRight();
+                        break;
+                    default:
+                        break;
+                }
+
+                if (fruitsIndex.includes(currentIndex)) {
+                    const blocks = document.querySelectorAll(".blocks");
+                    const currentBlock = blocks[currentIndex];
+                    currentBlock.textContent = "";
+                    add_arrow();
+
+                    switch (event.key) {
+                        case "ArrowUp":
+                            moveArrowTop();
+                            break;
+                        case "ArrowDown":
+                            moveArrowDown();
+                            break;
+                        case "ArrowLeft":
+                            moveArrowLeft();
+                            break;
+                        case "ArrowRight":
+                            moveArrowRight();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                arrow = displayArrow();
+            });
+
+            function moveArrowTop() {
+                arrowArr.push(currentIndex);
+                currentIndex = currentIndex - 28;
+            }
+
+            function moveArrowLeft() {
+                arrowArr.push(currentIndex);
+                currentIndex = currentIndex - 1;
+            }
+
+            function moveArrowRight() {
+                arrowArr.push(currentIndex);
+                currentIndex = currentIndex + 1;
+
+            }
+
+            function moveArrowDown() {
+                arrowArr.push(currentIndex);
+                currentIndex = currentIndex + 28;
+            }
+            function displayArrow() {
+                const blocks = document.querySelectorAll(".blocks");
+                const currentBlock = blocks[currentIndex];
+                const arrowSpan = document.createElement("span");
+                arrowSpan.classList.add("fa_fa-arrow-right");
+                currentBlock.appendChild(arrowSpan);
+
+                return arrowSpan;
+            }
+            function add_arrow() {
+                const blocks = document.querySelectorAll(".blocks");
+                const currentBlock = blocks[currentIndex];
+                currentBlock.textContent = arrow_container[currentIndex % arrow_container.length];
+                currentIndex % [arrow_container.length + 1];
+
+            }
+        
+
+    </script>
+
+</body>
+
+</html>
