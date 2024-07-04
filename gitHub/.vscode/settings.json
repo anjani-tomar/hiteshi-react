@@ -1,0 +1,6 @@
+{
+    "path-intellisense.showHiddenFiles": true,
+    "editor.hideCursorInOverviewRuler": false,
+    "editor.minimap.autohide": false,
+    "accessibility.hideAccessibleView": false
+}
